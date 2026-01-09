@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Flatpickr styles */
+@import 'flatpickr/dist/flatpickr.css';
+
+/* Dark theme menu active style */
+[data-theme='dark'] li:not(.menu-title, .menu-disabled)> :not(ul, .menu-title, .collapse, .accordion-content, .btn).menu-active {
+    background-color: var(--color-primary);
+    color: var(--color-primary-content);
+}
+
+body {
+    color: color-mix(in oklab, var(--color-base-content) 80%, transparent);
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
